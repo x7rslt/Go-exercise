@@ -1,1 +1,1 @@
-"First push test."
+Go exercise everyday.
