@@ -36,3 +36,16 @@ func TestFmt(t *testing.T) {
 	//v.String()
 
 }
+
+func TestFmtScan(t *testing.T) {
+	integer := 23
+	fmt.Println(integer)
+	fmt.Printf("%T %T %#v\n", integer, &integer, integer)
+	// Result: int *int
+	greats := [5]string{"Kitano", "Kobayashi", "Kurosawa", "Miyazaki", "Ozu"}
+	fmt.Printf("%v %T %#v %#v", greats, greats, greats, &greats)
+	cmd := []byte("a⌘")
+	fmt.Printf("%v %d %s %q %x % x\n", cmd, cmd, cmd, cmd, cmd, cmd)
+
+	fmt.Println("", "test", "test2", "", "test3")
+}
