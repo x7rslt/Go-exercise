@@ -2,6 +2,7 @@ package go_example_test
 
 import (
 	"fmt"
+	"os"
 	"testing"
 )
 
@@ -61,4 +62,9 @@ func TestMethod(t *testing.T) {
 	fmt.Println(rtangle.area())
 	fmt.Println(rtangle.perim())
 
+}
+
+func TestArgs(t *testing.T) {
+	content := os.Args[1:]
+	fmt.Println(content)
 }

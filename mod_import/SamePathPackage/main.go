@@ -5,7 +5,7 @@ package main
 import (
 	"fmt"
 
-	"mod_import_test/tempconv"
+	"Go_exercise/mod_import/SamePathPackage/tempconv"
 )
 
 func main() {
