@@ -1,4 +1,4 @@
-module Go_exercise
+module Go_exercise/ch2/ex3
 
 go 1.15
 
