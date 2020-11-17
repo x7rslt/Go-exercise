@@ -99,3 +99,13 @@ func TestBinary(t *testing.T) {
 	binary.BigEndian.PutUint16(pidCode[:], uint16(pid))
 	fmt.Println(pidCode, uint(pid))
 }
+func TestStruct(t *testing.T) {
+	type Lehe struct {
+		name string
+	}
+	xiao := Lehe{}
+	fmt.Println(xiao)
+}
+func TestSqrt(t *testing.T) {
+	fmt.Println(mymath.Sqrt(2))
+}
