@@ -1,4 +1,4 @@
-//绘制鸡蛋、马蹄形
+//处理f返回无穷大的情况，使用math.IsInf(z,0)判断
 
 package main
 
@@ -11,48 +11,20 @@ import (
 )
 
 const (
-	width, height = 600, 320
+	width, height = 1000, 600
 	cells         = 100
-	xyrange       = 30.0
+	xyrange       = 50.0
 	xyscale       = width / 2 / xyrange
 	zscale        = height * 0.4
 	angle         = math.Pi / 6
-	defaultColor  = "grey"
+	color         = "grey"
 )
 
 var sin30, cos30 = math.Sin(angle), math.Cos(angle)
 
-var f1 func(x, y float64) float64
-
-var color string
-
 func main() {
-	fmt.Println("http://localhost:8000/?color=gray&f=f")
+	fmt.Println("http://localhost:8000/")
 	handler := func(w http.ResponseWriter, r *http.Request) {
-		if err := r.ParseForm(); err != nil {
-			log.Print(err)
-		}
-		for k, v := range r.Form {
-			switch k {
-			case "color":
-				color = v[0]
-			case "f":
-				switch v[0] {
-				case "eggbox":
-					f1 = eggbox
-				case "saddle":
-					f1 = saddle
-				default:
-					f1 = f
-				}
-			}
-		}
-		if color == "" {
-			color = defaultColor
-		}
-		if f1 == nil {
-			f1 = f
-		}
 		w.Header().Set("Content-Type", "image/svg+xml")
 		svg(w)
 	}
@@ -93,7 +65,7 @@ func svg(w io.Writer) {
 func corner(i, j int) (float64, float64, bool) {
 	x := xyrange * (float64(i)/cells - 0.5)
 	y := xyrange * (float64(j)/cells - 0.5)
-	z := f1(x, y)
+	z := f(x, y)
 	if math.IsInf(z, 0) {
 		return 0, 0, false
 	}
@@ -104,11 +76,4 @@ func corner(i, j int) (float64, float64, bool) {
 func f(x, y float64) float64 {
 	r := math.Hypot(x, y)
 	return math.Sin(r)
-}
-func saddle(x, y float64) float64 {
-	r := y*y/600 - x*x/300
-	return r
-}
-func eggbox(x, y float64) float64 {
-	return (math.Cos(x) + math.Cos(y)) / 10
 }
