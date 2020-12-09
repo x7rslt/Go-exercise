@@ -7,6 +7,7 @@ import (
 	"syscall"
 )
 
+//not supported by windows
 func main() {
 	path, err := exec.LookPath("nslookup")
 	if err != nil {
