@@ -18,4 +18,5 @@ func main() {
 	fmt.Println(flagvar)
 
 }
-flag 待学习
+
+//flag 待学习
