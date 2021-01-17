@@ -28,7 +28,8 @@ func ReadDefaultConfig() (*ConfigOptions, error) {
 	if err != nil {
 		return NewConfigOptions(), err
 	}
-	defaultconf := filepath.Join(userhome, ".ffufrc")
+	fmt.Println(userhome)
+	defaultconf := filepath.Join("/Users/xiaoshuai/go/", "src/Go_exercise/tool_read_learn/ffuf_read/main/flag/parseflag/configtest")
 	return ReadConfig(defaultconf)
 
 }
