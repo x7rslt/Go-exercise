@@ -35,8 +35,10 @@ func main() {
 			defer f.Close()
 		}
 	} else {
+		//设置log输出
 		log.SetOutput(ioutil.Discard)
 	}
 	fmt.Println(otp)
+	//log写入到log日志里
 	log.Print("test")
 }
