@@ -21,16 +21,21 @@ func main() {
 				}
 			}
 		}()
+		fmt.Printf("dst type:%T \n", dst)
+		fmt.Println(n)
 		return dst
 	}
 
 	ctx, cancel := context.WithCancel(context.Background())
+	fmt.Println("Context Start.")
 	defer cancel()
+
 	for n := range gen(ctx) {
 		fmt.Println(n)
 		if n == 20 {
 			break
 		}
 	}
-	fmt.Println("Context test")
+	fmt.Println("Context done.")
+
 }
