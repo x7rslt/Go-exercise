@@ -6,6 +6,6 @@ database:
   name: db
   addr: ***REMOVED***:3306
   username: root
-  password: ***REMOVED***.X
+  password: ***REMOVED***
 wx_app_id: 123
 wx_secret: 123

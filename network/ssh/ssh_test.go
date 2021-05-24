@@ -9,7 +9,7 @@ import (
 )
 
 var username = "root"
-var password = "***REMOVED***.X"
+var password = "***REMOVED***"
 var host = "***REMOVED***:22"
 
 func TestPassword(t *testing.T) {

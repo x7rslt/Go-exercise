@@ -6,4 +6,4 @@ database:
   name: happy_mall
   host: ***REMOVED***:3306
   username: root
-  password: ***REMOVED***.X
+  password: ***REMOVED***
