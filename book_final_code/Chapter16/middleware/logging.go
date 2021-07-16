@@ -47,7 +47,7 @@ func Logging() gin.HandlerFunc{
 		if err := json.Unmarshal(blw.Body.Bytes(),&response);err!=nil{
 			code = myerr.InternalServerError.Code
 			message = err.Error()
-			MyLog.LogError(err)
+			MyLog.Log.Error(err)
 
 		}else{
 			code = response.Code

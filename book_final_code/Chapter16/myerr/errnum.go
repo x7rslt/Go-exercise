@@ -1,6 +1,6 @@
 package myerr
 
-import fmt
+import "fmt"
 
 type ErrNum struct{
 	Code int
@@ -16,14 +16,13 @@ type Err struct{
 	Err error
 }
 
-func New(num ErrNum ,err Error)*Err{
-	return *Err{
-		ErrNum :ErrNum{Code:num.Code,Message:num.Message}
-		Err:err,
+func New(num ErrNum, err error) *Err {
+	return &Err{
+		ErrNum: ErrNum{Code: num.Code, Message: num.Message},
+		Err:    err,
 	}
 }
-
-func (e *Err)Add(mesage string)Err{
+func (e *Err)Add(message string)Err{
 	e.ErrNum.Message += " " + message
 	return *e
 }
