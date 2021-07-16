@@ -7,7 +7,7 @@ import (
 	"food/handler"
 	"food/model"
 	"github.com/gin-gonic/gin"
-	"github.com/i-coder-robot/book_final_code/Chapter16/middleware"
+	"food/middleware"
 	"log"
 	"net/http"
 
@@ -34,7 +34,9 @@ func main() {
 	defer model.DB.Close()
 	r := gin.New()
 	Load(
-		r,middleware.ProcessTraceID(),
+		r,
+		middleware.Cors(),
+		middleware.ProcessTraceID(),
 		middleware.Logging(),
 	)
 	port := viper.GetString("addr")

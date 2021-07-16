@@ -1,0 +1,974 @@
+2021-07-16 09:32:44	info	chapter16/main.go:41	开始监听端口：:9090
+2021-07-16 14:39:52	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 14:39:52	info	middleware/logging.go:57	543.5µs       | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/ | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 14:40:14	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 14:40:14	info	middleware/logging.go:57	0s            | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/ | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 14:40:42	info	middleware/logging.go:57	986.7036ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 14:40:43	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 14:40:43	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET /favicon.ico | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 14:40:47	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 14:40:47	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET /v1/dp/hotel/detail/ | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 14:40:56	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 14:40:56	info	middleware/logging.go:57	607.9µs       | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/1/ | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 14:41:18	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 14:41:18	info	middleware/logging.go:57	0s            | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 14:41:34	info	middleware/logging.go:57	608.0807ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 14:42:30	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 14:42:30	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 14:42:41	info	middleware/logging.go:57	752.755ms     | ::1          | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 14:42:42	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 14:42:42	info	middleware/logging.go:57	0s            | ::1          | GET /favicon.ico | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:01:48	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:01:48	info	middleware/logging.go:57	1.159ms       | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:03:05	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:03:05	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:06:47	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:06:47	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:06:58	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:06:58	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:15:11	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:15:11	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:15:59	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:15:59	info	middleware/logging.go:57	405.4µs       | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:16:11	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:16:11	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:18:02	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:18:02	info	middleware/logging.go:57	471µs         | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:18:45	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:18:45	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:19:44	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:19:44	info	middleware/logging.go:57	1.3742ms      | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:19:53	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:19:53	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:28:52	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:28:52	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:30:29	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:30:29	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:30:43	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:30:43	info	middleware/logging.go:57	109.1µs       | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:40:27	info	chapter16/main.go:41	开始监听端口：:9090
+2021-07-16 15:40:52	info	middleware/logging.go:57	630.7015ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:41:07	info	middleware/logging.go:57	558.6732ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:41:42	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:41:42	info	middleware/logging.go:57	0s            | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:42:12	info	middleware/logging.go:57	712.1731ms    | ::1          | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:43:22	info	middleware/logging.go:57	855.2513ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:43:24	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:43:24	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET /favicon.ico | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:43:34	info	middleware/logging.go:57	685.2855ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:44:30	info	middleware/logging.go:57	722.2333ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:44:31	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:44:31	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET /favicon.ico | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:44:47	info	middleware/logging.go:57	667.5591ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:44:53	info	middleware/logging.go:57	1.0591391s    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:45:01	info	middleware/logging.go:57	910.96ms      | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:45:02	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:45:02	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET /favicon.ico | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:45:22	info	middleware/logging.go:57	696.1923ms    | 127.0.0.1    | GET /v1/dp/hotel/detail/1 | {code: 0, message: }
+2021-07-16 15:48:19	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:48:19	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET / | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:49:18	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:49:18	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET / | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:50:47	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:50:47	info	middleware/logging.go:57	0s            | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:51:33	info	chapter16/main.go:41	开始监听端口：:9090
+2021-07-16 15:51:55	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:51:55	info	middleware/logging.go:57	1.0057ms      | ::1          | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:52:33	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:52:33	info	middleware/logging.go:57	0s            | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:52:41	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:52:41	info	middleware/logging.go:57	39.5µs        | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 15:52:43	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 15:52:43	info	middleware/logging.go:57	309.3µs       | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 16:31:29	info	chapter16/main.go:42	开始监听端口：:9090
+2021-07-16 16:31:47	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 16:31:47	info	middleware/logging.go:57	0s            | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 16:31:58	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 16:31:58	info	middleware/logging.go:57	0s            | 127.0.0.1    | OPTIONS /v1/dp/hotel/detail/1 | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 17:22:27	info	chapter16/main.go:42	开始监听端口：:9090
+2021-07-16 17:23:25	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 17:23:25	info	middleware/logging.go:57	562.7µs       | 127.0.0.1    | GET / | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 17:23:34	error	middleware/logging.go:52	invalid character 'O' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 17:23:34	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET /check/health | {code: 30001, message: invalid character 'O' looking for beginning of value}
+2021-07-16 17:25:14	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 17:25:14	info	middleware/logging.go:57	0s            | 127.0.0.1    | OPTIONS /check/health | {code: 30001, message: invalid character 'A' looking for beginning of value}
+2021-07-16 17:25:23	error	middleware/logging.go:52	invalid character 'O' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 17:25:23	info	middleware/logging.go:57	0s            | 127.0.0.1    | GET /check/health | {code: 30001, message: invalid character 'O' looking for beginning of value}
+2021-07-16 17:25:49	error	middleware/logging.go:52	invalid character 'A' looking for beginning of value
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.Logging.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/logging.go:52
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/i-coder-robot/book_final_code/Chapter16/middleware.ProcessTraceID.func1
+	F:/GoDatabase/pkg/mod/github.com/i-coder-robot/book_final_code@v0.0.0-20210612113845-00ec2d69dc7e/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	F:/GoDatabase/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-16 17:25:49	info	middleware/logging.go:57	0s            | 127.0.0.1    | OPTIONS /check/health | {code: 30001, message: invalid character 'A' looking for beginning of value}
