@@ -16,12 +16,22 @@ type Err struct{
 	Err error
 }
 
+<<<<<<< HEAD
 func New(num ErrNum, err error) *Err {
 	return &Err{
 		ErrNum: ErrNum{Code: num.Code, Message: num.Message},
 		Err:    err,
 	}
 }
+=======
+func New(num ErrNum ,err Error)*Err{
+	return &Err{
+		ErrNum :ErrNum{Code:num.Code,Message:num.Message},
+		Err:err,
+	}
+}
+
+>>>>>>> 3bc95edaf0eee6696f3b7d4b974b987237244d4f
 func (e *Err)Add(message string)Err{
 	e.ErrNum.Message += " " + message
 	return *e
