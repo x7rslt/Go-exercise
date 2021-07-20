@@ -1,0 +1,471 @@
+2021-07-18 15:49:54	info	Chapter16/main.go:43	开始监听端口：:9090
+2021-07-18 15:50:27	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 15:50:27	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 15:51:07	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 15:51:07	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 15:51:19	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 15:51:19	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 15:51:20	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.serveError
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:525
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:518
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 15:51:20	info	middleware/logging.go:57	742.7µs       |::1         |GET /favicon.ico|{code:30001,message:unexpected end of JSON input}
+2021-07-18 15:52:33	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 15:52:33	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 15:53:33	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 15:53:33	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 15:54:06	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 15:54:06	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 15:57:23	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 15:57:24	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 16:30:39	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 16:30:39	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 16:30:59	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 16:30:59	info	middleware/logging.go:57	992.7µs       |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 16:32:23	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 16:32:23	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 16:35:09	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 16:35:09	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 16:36:10	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 16:36:10	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 16:37:10	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 16:37:10	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 17:14:24	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 17:14:24	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 17:14:43	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 17:14:43	info	middleware/logging.go:57	235µs         |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 17:15:22	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 17:15:22	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
+2021-07-18 17:40:23	error	middleware/logging.go:50	unexpected end of JSON input
+food/middleware.Logging.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/logging.go:50
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.ProcessTraceID.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/traceid.go:17
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+food/middleware.Cors.func1
+	F:/GoDatabase/go-exercise/book_final_code/Chapter16/middleware/corsMIddleware.go:24
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/recovery.go:99
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:489
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/x7rsl/go/pkg/mod/github.com/gin-gonic/gin@v1.7.2/gin.go:445
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2887
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:1952
+2021-07-18 17:40:23	info	middleware/logging.go:57	0s            |::1         |GET /v1/dp/hotel/detail/1|{code:30001,message:unexpected end of JSON input}
