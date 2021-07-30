@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="https://cdn.rawgit.com/download/polymer-cdn/2.6.0.2/lib/">
+  <script src="webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="polymer/polymer.html">
+  <link rel="import" href="iron-ajax/iron-ajax.html">
+</head>
+<body>
+<x-foo></x-foo>
+
+<dom-module id="x-foo">
+  <template>
+    <iron-ajax id="ajax"
+               method="post"
+               url="http://127.0.0.1:8080/loginJSON"
+               content-type="application/json"
+               body="[[body]]"
+               last-response="{{response}}"></iron-ajax>
+    <button on-click="send">Send</button>
+    <pre>[[json(response)]]</pre>
+  </template>
+</dom-module>
+</body>
+<script>
+  HTMLImports.whenReady(() => {
+    class XFoo extends Polymer.Element {
+      static get is() { return 'x-foo'; }
+
+      send() {
+        this.body = { user: "manu",password:"123" };
+        this.$.ajax.generateRequest();
+      }
+
+      json(d) {
+        return JSON.stringify(d, null, 2);
+      }
+    }
+    customElements.define(XFoo.is, XFoo);
+  });
+
+</script>
+
+</html>
