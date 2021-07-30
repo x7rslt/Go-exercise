@@ -13,7 +13,8 @@ type Login struct{
 
 func main(){
 	r := gin.Default()
-
+	r.Static("/","./statics")
+	//r.StaticFile("/statics","./statics")
 	r.POST("/loginJSON",func(c *gin.Context){
 		var json Login
 		if err := c.ShouldBindJSON(&json);err !=nil{
