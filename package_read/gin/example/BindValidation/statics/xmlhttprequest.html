@@ -1,0 +1,19 @@
+<form name="person">
+    <input name="name" value="John">
+    <input name="surname" value="Smith">
+</form>
+
+<script>
+    // pre-fill FormData from the form
+    let formData = new FormData(document.forms.person);
+
+    // add one more field
+    formData.append("middle", "Lee");
+
+    // send it out
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "/article/xmlhttprequest/post/user");
+    xhr.send(formData);
+
+    xhr.onload = () => alert(xhr.response);
+</script>
