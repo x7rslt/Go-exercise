@@ -37,7 +37,7 @@ var (
 )
 
 var targets []string = []string{
-	"http://www.baidu.com","http://aliyun.com",
+	"http://testphp.vulnweb.com/",
 }
 
 func main(){
@@ -74,8 +74,10 @@ func ScanPocXray(pocName string, targetString []string) error {
 	cmd := &exec.Cmd{}
 
 	if osType == "darwin" {
+
 		// 要运行的程序名称，比如 ksubdomainMac
-		runName := filepath.Join(nowPath, "pkg", "third", "xray")
+		runName := filepath.Join(nowPath, "third", "xray_darwin_amd64")
+		log.Println("Run path:",runName)
 		//./xray_darwin_amd64 webscan --url http://127.0.0.1:19001  --html-output 0102.html
 		// --webhook-output http://127.0.0.1:5000/webhook
 		if pocName != "" {
