@@ -1,0 +1,10 @@
+2021-08-11 22:23:51	info	LogFile/main.go:87	0
+2021-08-11 22:25:46	info	LogFile/main.go:87	0
+2021-08-11 22:27:59	info	LogFile/main.go:88	0
+2021-08-11 22:28:31	info	LogFile/main.go:89	0
+2021-08-11 22:31:26	info	LogFile/main.go:89	0
+2021-08-11 22:33:37	info	LogFile/main.go:90	0
+2021-08-11 22:37:07	info	LogFile/main.go:90	0
+2021-08-11 22:37:07	warn	LogFile/main.go:91	No test
+2021-08-11 22:38:00	info	LogFile/main.go:90	0
+2021-08-11 22:38:00	warn	LogFile/main.go:91	No test
