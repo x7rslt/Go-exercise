@@ -25,6 +25,7 @@ require (
 	github.com/lestrrat-go/strftime v1.0.5 // indirect
 	github.com/nareix/curl v0.0.0-20151103032410-0c1ac3e488d8
 	github.com/pelletier/go-toml v1.2.0
+	github.com/rverton/webanalyze v0.3.3
 	github.com/spf13/viper v1.7.1
 	github.com/stretchr/testify v1.7.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
