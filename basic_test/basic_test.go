@@ -172,3 +172,9 @@ func TestLogFatal(t *testing.T) {
 	}
 	log.Println("a 不等于2")
 }
+
+
+func TestSlice(t *testing.T){
+	s := [3]string{}
+	fmt.Println(s,len(s))
+}
