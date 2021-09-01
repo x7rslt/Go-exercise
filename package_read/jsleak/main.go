@@ -24,11 +24,11 @@ type JsonReturn struct {
 //待处理
 func getLeak(url string, data string, pattern string, jsonArray *[]JsonReturn) {
 	re := regexp.MustCompile(`^[a-z]+\[[0-9]+\]$`)
-	matches := re.MatchString(data)
+	matches := re.FindStringIndex(data)
 	//fmt.Println(len(matches))
 	if len(matches) != 0 {
-		fmt.Printf("[+] Url: %v\n[+] Pattern: %v\n[+] Match: %v\n", url, pattern, string(matches))
-		jsn := JsonReturn{url, pattern, string(matches)}
+		fmt.Printf("[+] Url: %v\n[+] Pattern: %v\n[+] Match: %v\n", url, pattern, string(len(matches)))
+		jsn := JsonReturn{url, pattern, string(len(matches))}
 		*jsonArray = append(*jsonArray, jsn)
 	}
 
@@ -96,7 +96,8 @@ func main() {
 	}
 
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println("Open error:",err)
+		//log.Fatal(err)
 	}
 
 	for _, url := range get_inputs() {
