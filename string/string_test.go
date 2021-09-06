@@ -3,7 +3,6 @@ package string_test
 import (
 	"bufio"
 	"fmt"
-	"io"
 	"log"
 	"os"
 	"testing"
@@ -53,7 +52,7 @@ func TestPasswordList(t *testing.T){
 	}
 	defer f.Close()
 	var passwordlist []string
-	//逐行读取
+	//逐行读取string
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan(){
 		passwordlist = append(passwordlist, "\""+scanner.Text()+"\""+",")
@@ -62,6 +61,7 @@ func TestPasswordList(t *testing.T){
 		fmt.Println("Read file err:",err)
 	}
 	fmt.Println(passwordlist)
+	//逐行写入string
 	newfile,err := os.Create(path+"/newlist.txt")
 	if err != nil{
 		fmt.Println("Create File err:",err)
@@ -71,6 +71,6 @@ func TestPasswordList(t *testing.T){
 	defer newfile.Close()
 
 	for _,line := range passwordlist{
-		io.WriteString(newfile,line)
+		newfile.WriteString(line)
 	}
 }
