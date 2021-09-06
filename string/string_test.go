@@ -1,8 +1,11 @@
 package string_test
 
 import (
+	"bufio"
 	"fmt"
+	"io"
 	"log"
+	"os"
 	"testing"
 )
 
@@ -38,4 +41,36 @@ func TestIP(t *testing.T) {
 		fmt.Printf("%v:%v\n", name, ip)
 	}
 
+}
+
+
+func TestPasswordList(t *testing.T){
+	path,_ := os.Getwd()
+	file := path + "/password.txt"
+	f,err := os.Open(file)
+	if err != nil{
+		fmt.Println("Open file error:",err)
+	}
+	defer f.Close()
+	var passwordlist []string
+	//逐行读取
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan(){
+		passwordlist = append(passwordlist, "\""+scanner.Text()+"\""+",")
+	}
+	if err := scanner.Err();err!= nil{
+		fmt.Println("Read file err:",err)
+	}
+	fmt.Println(passwordlist)
+	newfile,err := os.Create(path+"/newlist.txt")
+	if err != nil{
+		fmt.Println("Create File err:",err)
+
+	}
+
+	defer newfile.Close()
+
+	for _,line := range passwordlist{
+		io.WriteString(newfile,line)
+	}
 }
