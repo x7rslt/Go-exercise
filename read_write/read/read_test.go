@@ -11,6 +11,105 @@ import (
 	"testing"
 )
 
+//Read File Line By Line method 1
+func TestReadLine1(t *testing.T){
+	file,err := os.Open("dict.txt")
+	if err != nil{
+		fmt.Println("Open file Err:",err)
+	}
+	defer file.Close()
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan(){
+		fmt.Println(scanner.Text())
+	}
+	if err := scanner.Err();err !=nil{
+		fmt.Println("Line read err:",err)
+	}
+}
+
+
+//Read File Line By Line
+func TestReadLine(t *testing.T){
+	file,err := os.Open("dict.txt")
+	if err!= nil{
+		fmt.Println("Fail to open file:",err)
+
+	}
+	fileScanner := bufio.NewScanner(file)
+	fileScanner.Split(bufio.ScanLines)
+	var fileTextLines []string
+	for fileScanner.Scan(){
+		fileTextLines = append(fileTextLines,fileScanner.Text())
+
+	}
+	file.Close()
+	for _,line := range fileTextLines{
+		fmt.Println(line)
+	}
+}
+
+//Read a file word by word
+func TestReadWord(t *testing.T){
+	// open file
+	f, err := os.Open("dict.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	// remember to close the file at the end of the program
+	defer f.Close()
+
+	// read the file word by word using scanner
+	scanner := bufio.NewScanner(f)
+	scanner.Split(bufio.ScanWords)
+
+	for scanner.Scan() {
+		// do something with a word
+		fmt.Println(scanner.Text())
+	}
+
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
+}
+
+//Read a file in chunks
+func TestReadLargeFile(t *testing.T){
+	chunkSize := 10
+	// open file
+	f, err := os.Open("dict.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	// remember to close the file at the end of the program
+	defer f.Close()
+
+	buf := make([]byte, chunkSize)
+
+	for {
+		n, err := f.Read(buf)
+		if err != nil && err != io.EOF {
+			log.Fatal(err)
+		}
+
+		if err == io.EOF {
+			break
+		}
+
+		fmt.Println(string(buf[:n]))
+	}
+}
+
+//Read an entire file
+func TestReadEntire(t *testing.T){
+	file,err := os.ReadFile("dict.txt")
+	if err != nil{
+		fmt.Println("Read Err:",err)
+	}
+	fmt.Println(string(file))
+	fmt.Printf("%T",file)
+}
+
+//Read an entire file,输出不同格式
 func TestReadAll(t *testing.T) {
 	file, err := os.Open("dict.txt")
 	if err != nil {
