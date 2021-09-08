@@ -74,3 +74,38 @@ func TestPasswordList(t *testing.T){
 		newfile.WriteString(line)
 	}
 }
+
+//Alternate password
+func TestPasswdGenerate(t *testing.T){
+	path,_ := os.Getwd()
+	file := path + "/password.txt"
+	f,err := os.Open(file)
+	if err != nil{
+		fmt.Println("Open file error:",err)
+	}
+	defer f.Close()
+	var passwordlist []string
+	//逐行读取string
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan(){
+		passwordlist = append(passwordlist, scanner.Text()+"\n")
+	}
+	if err := scanner.Err();err!= nil{
+		fmt.Println("Read file err:",err)
+	}
+	fmt.Println(passwordlist)
+	//逐行写入string
+	newfile,err := os.Create(path+"/alterlist.txt")
+	if err != nil{
+		fmt.Println("Create File err:",err)
+
+	}
+
+	defer newfile.Close()
+
+	for i,line := range passwordlist{
+		println(i)
+		newfile.WriteString(line)
+		newfile.WriteString("peter\n")
+	}
+}
