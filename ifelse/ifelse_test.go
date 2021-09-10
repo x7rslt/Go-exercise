@@ -29,3 +29,21 @@ func TestElif(t *testing.T) {
 		}
 	}
 }
+
+
+//Loop
+func TestLoop(t *testing.T){
+	sum := 0
+	for i:= 1;i<5;i++{
+		if i%2!=0{
+			continue
+		}else if i == 4 {
+			fmt.Println("i reach break")
+			return
+		}
+		//因为上面的return下面不会执行
+		sum +=i
+		fmt.Println(sum)
+	}
+
+}
