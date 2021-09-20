@@ -89,3 +89,10 @@ func TestCurrentTime(t *testing.T){
 	fmt.Println(sec)  // int64
 	fmt.Println(nsec) // int64
 }
+
+//Find day in week
+func TestWeekday(t *testing.T){
+	weekday := time.Now().Weekday()
+	fmt.Println(weekday)      // "Tuesday"
+	fmt.Println(int(weekday)) // "2"
+}
