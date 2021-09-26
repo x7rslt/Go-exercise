@@ -57,3 +57,24 @@ func TestGeneric2(t *testing.T){
 
 
 }
+
+func PrintSliceInts(i []int) {
+	for _, v := range i{
+		print(v)
+	}
+}
+
+func TestPrintSliceInts(t *testing.T) {
+	PrintSliceInts([]int {1,2,3,4,5,6,7,8,9})
+}
+
+func PrintSlice[T any](s []T) {
+	for _,v := range s{
+		print(v)
+	}
+}
+
+func TestPrintSlice(t *testing.T) {
+	PrintSlice([]int{1,2,3,4,5,6,7,8,9})
+	PrintSlice([]string {"a","b","c","d"})
+}
