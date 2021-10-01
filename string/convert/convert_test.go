@@ -40,6 +40,12 @@ func TestStringByte(t *testing.T){
 	//Convert bytes to string
 	s := string([]byte{65, 66, 67, 226, 130, 172})
 	fmt.Println(s) // ABC€
+
+	h := []byte("Hello world")
+	fmt.Println(h)
+
+	s2 := string(h)
+	fmt.Println(s2)
 }
 
 
