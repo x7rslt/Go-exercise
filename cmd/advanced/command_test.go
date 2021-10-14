@@ -1,6 +1,7 @@
 package command_test
 
 import (
+	"bytes"
 	"fmt"
 	"log"
 	"os"
@@ -22,9 +23,9 @@ func TestBasic(t *testing.T){
 		log.Fatalf("cmd.Run() failed with %s\n", err)
 	}
 }
-
+//Bug:执行报错
 func TestCommandDisplay(t *testing.T){
-	cmd := exec.Command("ls", "-lah")
+	cmd := exec.Command("C:\\Windows\\WinSxS\\cmd.exe", "ping 127.0.0.1")
 	out, err := cmd.CombinedOutput()
 	if err != nil {
 		log.Fatalf("cmd.Run() failed with %s\n", err)
@@ -32,3 +33,17 @@ func TestCommandDisplay(t *testing.T){
 	fmt.Printf("combined out:\n%s\n", string(out))
 }
 
+
+//bug:2021/10/14 16:37:32 cmd.Run() failed with exec: "dir": executable file not found
+func TestCommandCaptureSeparately(t *testing.T) {
+	cmd := exec.Command("ls", "-lah")
+	var stdout, stderr bytes.Buffer
+	cmd.Stdout = &stdout
+	cmd.Stderr = &stderr
+	err := cmd.Run()
+	if err != nil {
+		log.Fatalf("cmd.Run() failed with %s\n", err)
+	}
+	outStr, errStr := string(stdout.Bytes()), string(stderr.Bytes())
+	fmt.Printf("out:\n%s\nerr:\n%s\n", outStr, errStr)
+}
