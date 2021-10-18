@@ -54,6 +54,8 @@ github.com/bobesa/go-domain-util v0.0.0-20190911083921-4033b5f7dd89 h1:2pkAuIM8O
 github.com/bobesa/go-domain-util v0.0.0-20190911083921-4033b5f7dd89/go.mod h1:/09nEjna1UMoasyyQDhOrIn8hi2v2kiJglPWed1idck=
 github.com/boombuler/barcode v1.0.1 h1:NDBbPmhS+EqABEs5Kg3n/5ZNjy73Pz7SIV+KCeqyXcs=
 github.com/boombuler/barcode v1.0.1/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
+github.com/bwmarrin/snowflake v0.3.0 h1:xm67bEhkKh6ij1790JB83OujPR5CzNe8QuQqAgISZN0=
+github.com/bwmarrin/snowflake v0.3.0/go.mod h1:NdZxfVWX+oR6y2K0o6qAYv6gIOP9rjG0/E9WsDpxqwE=
 github.com/bytedance/go-tagexpr/v2 v2.8.1 h1:MuPBYCDcSFCyTgMpNV/MacNj3GNTBT2vVy0Fre0bfn0=
 github.com/bytedance/go-tagexpr/v2 v2.8.1/go.mod h1:NjtEuSXm9eW+0kEZK1vzXVoCdESNNiOFamgqsMdJKPc=
 github.com/casbin/casbin/v2 v2.36.0 h1:LJvYC2Wk6BTd1k7hIGeFVBYn18b+q4DH4jcn8TbdVXs=

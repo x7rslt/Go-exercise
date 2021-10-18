@@ -12,6 +12,7 @@ require (
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/boombuler/barcode v1.0.1 // indirect
+	github.com/bwmarrin/snowflake v0.3.0 // indirect
 	github.com/bytedance/go-tagexpr/v2 v2.8.1 // indirect
 	github.com/casbin/casbin/v2 v2.36.0
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
