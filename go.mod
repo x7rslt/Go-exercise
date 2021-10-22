@@ -4,6 +4,7 @@ go 1.15
 
 require (
 	fyne.io/fyne/v2 v2.0.3
+	gioui.org v0.0.0-20211020080958-6b0e00b9aa54 // indirect
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/BurntSushi/toml v0.3.1
 	github.com/PuerkitoBio/goquery v1.6.1
@@ -36,11 +37,10 @@ require (
 	github.com/stretchr/testify v1.7.0 // indirect
 	github.com/tuotoo/qrcode v0.0.0-20190222102259-ac9c44189bf2 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
-	go.uber.org/zap v1.10.0
+	go.uber.org/zap v1.16.0
 	golang.org/x/crypto v0.0.0-20210218145215-b8e89b74b9df
 	golang.org/x/net v0.0.0-20210510120150-4163338589ed
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20210510120138-977fb7262007 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
 	gopkg.in/mail.v2 v2.3.1 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
