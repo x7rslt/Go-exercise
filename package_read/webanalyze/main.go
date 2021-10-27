@@ -54,7 +54,7 @@ func main() {
 	)
 
 	flag.Parse()
-	host = "https://www.freebuf.com/"
+	host = "http://www.hzda.org/"
 	//update = false
 	apps = "./technologies.json"
 	crawlCount = 1

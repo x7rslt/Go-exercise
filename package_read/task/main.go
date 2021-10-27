@@ -8,7 +8,7 @@ import (
 
 	"Go-exercise/package_read/task/models"
 )
-
+//没有实现想要的效果，需要加入gin
 func main() {
 	log.Println("Starting...")
 
