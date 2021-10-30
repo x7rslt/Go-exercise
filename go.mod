@@ -30,6 +30,7 @@ require (
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/lestrrat-go/strftime v1.0.5 // indirect
 	github.com/nareix/curl v0.0.0-20151103032410-0c1ac3e488d8
+	github.com/ouqiang/gocron v1.5.3 // indirect
 	github.com/pelletier/go-toml v1.2.0
 	github.com/projectdiscovery/wappalyzergo v0.0.13 // indirect
 	github.com/robfig/cron v1.2.0 // indirect
@@ -37,6 +38,7 @@ require (
 	github.com/spf13/viper v1.7.1
 	github.com/stretchr/testify v1.7.0 // indirect
 	github.com/tuotoo/qrcode v0.0.0-20190222102259-ac9c44189bf2 // indirect
+	github.com/urfave/cli/v2 v2.3.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.16.0
 	golang.org/x/crypto v0.0.0-20210218145215-b8e89b74b9df
