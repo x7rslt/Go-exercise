@@ -23,6 +23,7 @@ require (
 	github.com/go-ping/ping v0.0.0-20210506233800-ff8be3320020
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/go-xorm/xorm v0.7.9
+	github.com/gocolly/colly/v2 v2.1.0 // indirect
 	github.com/google/gopacket v1.1.19
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/jasonlvhit/gocron v0.0.1 // indirect
