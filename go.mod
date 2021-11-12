@@ -48,6 +48,7 @@ require (
 	github.com/spf13/viper v1.8.1
 	github.com/stretchr/testify v1.7.0 // indirect
 	github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5 // indirect
+	github.com/tomnomnom/gahttp v0.0.0-20180905143706-793a49d82336 // indirect
 	github.com/tuotoo/qrcode v0.0.0-20190222102259-ac9c44189bf2 // indirect
 	github.com/urfave/cli/v2 v2.3.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
