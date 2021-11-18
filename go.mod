@@ -21,6 +21,7 @@ require (
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/faiface/beep v1.1.0 // indirect
+	github.com/fatih/color v1.13.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/gen2brain/beeep v0.0.0-20210529141713-5586760f0cc1 // indirect
 	github.com/ghodss/yaml v1.0.0
@@ -44,6 +45,7 @@ require (
 	github.com/projectdiscovery/wappalyzergo v0.0.13 // indirect
 	github.com/prometheus/tsdb v0.7.1 // indirect
 	github.com/robfig/cron v1.2.0 // indirect
+	github.com/rodaine/table v1.0.1 // indirect
 	github.com/rverton/webanalyze v0.3.3
 	github.com/spf13/viper v1.8.1
 	github.com/stretchr/testify v1.7.0 // indirect
