@@ -6,6 +6,7 @@ import (
 	"github.com/fatih/color"
 	"io"
 	"net/http"
+	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -84,6 +85,11 @@ func getTitle(content []byte)(title string){
 	return title
 }
 var userAgent string
+
+func FileExist(path string)bool{
+	_,err := os.Lstat(path)
+	return !os.IsNotExist(err)
+}
 func main(){
 	userAgent = "This is a test."
 	var timeout int
@@ -102,4 +108,6 @@ func main(){
 	}
 	result:= sendReq(client,"180.101.49.11","180.101.49.11","/")
 	fmt.Println(result[0].title)
+
+
 }
