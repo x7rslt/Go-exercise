@@ -1,12 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"crypto/tls"
 	"fmt"
 	"github.com/fatih/color"
 	"io"
 	"net/http"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strconv"
 	"strings"
@@ -90,6 +92,36 @@ func FileExist(path string)bool{
 	_,err := os.Lstat(path)
 	return !os.IsNotExist(err)
 }
+
+func writeFile(w *bufio.Writer,i info){
+	var line string
+	if i.status/100 == 3{
+		line =fmt.Sprintf("%s: %s\t%s: %s\t%s: %d\t%s: %d\t%s: %s\t%s: %s\n",
+			"IP",i.ip,
+			"URL",i.url,
+			"Status",i.status,
+			"Length",i.length,
+			"Title",i.title,
+			//cyan("Type"),i.Type,
+			"Location",i.location,
+		)
+	}else{
+		line = fmt.Sprintf("%s: %s\t%s: %s\t%s: %d\t%s: %d\t%s: %s\n",
+			"IP",i.ip,
+			"URL",i.url,
+			"Status",i.status,
+			"Length",i.length,
+			"Title",i.title,
+			//cyan("Type"),i.Type,
+		)
+	}
+	_,err := w.WriteString(line)
+	if err!=nil{
+		panic(err)
+	}
+	_= w.Flush()
+}
+
 func main(){
 	userAgent = "This is a test."
 	var timeout int
@@ -108,6 +140,14 @@ func main(){
 	}
 	result:= sendReq(client,"180.101.49.11","180.101.49.11","/")
 	fmt.Println(result[0].title)
+	path,_ := filepath.Abs("./package_read/host_scan")
+	f, err := os.OpenFile(path+"/ScanResult", os.O_CREATE|os.O_WRONLY, 0664)
+	if err!=nil{
+		panic(err)
+	}
+	defer f.Close()
+	w := bufio.NewWriter(f)
+	writeFile(w,result[0])
 
 
 }
