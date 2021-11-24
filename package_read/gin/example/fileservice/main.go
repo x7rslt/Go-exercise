@@ -7,6 +7,8 @@ import (
 //快速开启文件共享服务
 func main(){
 	r := gin.Default()
+	//file,_:= filepath.Abs("./")
+	//fmt.Println("Current path : ",file)
 	r.StaticFS("/down",http.Dir("."))
 	r.Run()
 }
