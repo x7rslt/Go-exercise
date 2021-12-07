@@ -102,7 +102,7 @@ func ScanPocXray(pocName string, targetString []string) error {
 		if pocName != "" {
 			cmd = exec.Command(runName, "webscan", "--url-file", fileName, "--poc", pocName, "--json-output", xrayOuputputh)
 		} else {
-			cmd = exec.Command(runName, "webscan", "--url-file", fileName, "--json-output", xrayOuputputh)
+			cmd = exec.Command(runName, "webscan", "--basic-crawler","--url-file", fileName, "--json-output", xrayOuputputh)
 		}
 	}
 
