@@ -10,7 +10,7 @@ import (
 
 var (
 	Driver = "mysql"
-	DsName = "root:***REMOVED***@tcp(204.44.98.24:3306)/gotest?charset=utf8" //数据库需提前创建
+	DsName = "root:Xss8271329@tcp(204.44.98.24:3306)/gotest?charset=utf8" //数据库需提前创建
 	DB     *xorm.Engine
 	DBErr  error
 )

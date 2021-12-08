@@ -4,7 +4,7 @@ url: http://127.0.0.1:9090
 max_check_count: 10
 database:
   name: food
-  host: ***REMOVED***:3306
+  host: 114.116.230.93:3306
   username: root
   password: mysqltest110
 wx_app_id: 123

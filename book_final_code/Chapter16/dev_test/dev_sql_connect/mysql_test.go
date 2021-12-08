@@ -12,7 +12,7 @@ import (
 
 var (
 	username string = "root"
-	addr string ="***REMOVED***:3306"
+	addr string ="114.116.230.93:3306"
 	name string ="food"
 	password string = "mysqltest110"
 )

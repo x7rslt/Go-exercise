@@ -4,8 +4,8 @@ url: http://127.0.0.1:9090   # pingServer函数请求的API服务器的ip:port
 max_check_count: 10           # pingServer函数尝试的次数
 database:
   name: db
-  addr: ***REMOVED***:3306
+  addr: 167.99.155.35:3306
   username: root
-  password: ***REMOVED***
+  password: Xss8271329
 wx_app_id: 123
 wx_secret: 123
