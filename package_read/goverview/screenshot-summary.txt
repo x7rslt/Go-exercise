@@ -1,0 +1,4 @@
+https://www.baidu.com ;; screenshots/https___www.baidu.com.png
+https://www.tencent.com ;; screenshots/https___www.tencent.com.png
+https://www.tmall.com ;; screenshots/https___www.tmall.com.png
+https://www.alibaba.com ;; screenshots/https___www.alibaba.com.png
