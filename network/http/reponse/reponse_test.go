@@ -18,6 +18,7 @@ func TestResGet(t *testing.T) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	//fmt.Println(res.Header)
 	fmt.Println(res.Status, len(string(content)))
 	fmt.Printf("Status %s,Proto %s", res.Status, res.Proto)
 	fmt.Printf("Header -data %q\n", res.Header["Date"])

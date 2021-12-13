@@ -7,7 +7,7 @@ require (
 	gioui.org v0.0.0-20211020080958-6b0e00b9aa54 // indirect
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/BurntSushi/toml v0.3.1
-	github.com/PuerkitoBio/goquery v1.6.1
+	github.com/PuerkitoBio/goquery v1.7.1
 	github.com/Ullaakut/nmap v1.0.0
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/bitly/go-simplejson v0.5.0
@@ -38,14 +38,20 @@ require (
 	github.com/google/gopacket v1.1.19
 	github.com/gopherjs/gopherjs v0.0.0-20211030200517-e8a8f89b521b // indirect
 	github.com/gorilla/websocket v1.4.2 // indirect
+	github.com/j3ssie/goverview v1.0.1 // indirect
 	github.com/jasonlvhit/gocron v0.0.1 // indirect
 	github.com/jinzhu/gorm v1.9.16
+	github.com/kbinani/screenshot v0.0.0-20210720154843-7d3a670d8329 // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/lestrrat-go/strftime v1.0.5 // indirect
 	github.com/mcuadros/go-defaults v1.2.0 // indirect
 	github.com/nareix/curl v0.0.0-20151103032410-0c1ac3e488d8
 	github.com/ouqiang/gocron v1.5.3 // indirect
 	github.com/pelletier/go-toml v1.9.3
+	github.com/projectdiscovery/gologger v1.1.4 // indirect
+	github.com/projectdiscovery/naabu v1.1.4 // indirect
+	github.com/projectdiscovery/subfinder v2.4.9+incompatible // indirect
+	github.com/projectdiscovery/subfinder/v2 v2.4.9 // indirect
 	github.com/projectdiscovery/wappalyzergo v0.0.13 // indirect
 	github.com/prometheus/tsdb v0.7.1 // indirect
 	github.com/robfig/cron v1.2.0 // indirect
@@ -57,11 +63,12 @@ require (
 	github.com/tomnomnom/gahttp v0.0.0-20180905143706-793a49d82336 // indirect
 	github.com/tuotoo/qrcode v0.0.0-20190222102259-ac9c44189bf2 // indirect
 	github.com/urfave/cli/v2 v2.3.0 // indirect
+	github.com/veo/vscan v1.3.0 // indirect
 	github.com/xuri/excelize/v2 v2.4.1 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.17.0
 	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97
-	golang.org/x/net v0.0.0-20210726213435-c6fcb2dbf985
+	golang.org/x/net v0.0.0-20210916014120-12bc252f5db8
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/sys v0.0.0-20211031064116-611d5d643895 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
