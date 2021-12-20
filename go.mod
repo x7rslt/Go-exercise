@@ -36,6 +36,7 @@ require (
 	github.com/gocolly/colly/v2 v2.1.0 // indirect
 	github.com/godbus/dbus/v5 v5.0.6 // indirect
 	github.com/google/gopacket v1.1.19
+	github.com/gookit/color v1.5.0 // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20211030200517-e8a8f89b521b // indirect
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/j3ssie/goverview v1.0.1 // indirect

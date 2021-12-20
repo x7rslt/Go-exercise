@@ -1,4 +1,4 @@
-//Terminal command :go run main.go -sha 384
+//Terminal command :go run rename_test.go -sha 384
 //Output SHA384 or SHA512
 package main
 

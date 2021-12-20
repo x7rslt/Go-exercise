@@ -1,6 +1,6 @@
 //练习1.5:改变利萨茹程序的画板颜色为绿色黑底来增加真实性。使用color.RGBA{0xRR,0xGG,0xBB,0xff}创建一种Web颜色#RRGGBB，
 //每一对十六进制数字表示组成一个像素红、绿、蓝分量的亮度。
-//go main.go >out.gif 生成gif图片
+//go rename_test.go >out.gif 生成gif图片
 package main
 
 import (

@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-//main.go test wordlist Set()
+//rename_test.go test wordlist Set()
 func main() {
 	fmt.Println("tset")
 	ch := make(chan int, 1)

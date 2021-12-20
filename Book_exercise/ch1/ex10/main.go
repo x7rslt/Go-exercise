@@ -1,6 +1,6 @@
 //练习1.10: 找一个产生大量数据的网站，连续两次运行fetchall，看报告的时间是否有大的变化，调查缓存情况。
 //每一次获取的内容一样吗？修改fetchall将内容输出到文件，这样检查它们是否一致
-//go run main.go http://www.baidu.com http://www.tmall.com http://www.jd.com http://www.taobao.com 执行命令
+//go run rename_test.go http://www.baidu.com http://www.tmall.com http://www.jd.com http://www.taobao.com 执行命令
 package main
 
 import (

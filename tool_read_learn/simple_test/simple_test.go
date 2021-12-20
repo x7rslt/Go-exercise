@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-//main.go test wordlist Set()
+//rename_test.go test wordlist Set()
 func Test(t *testing.T) {
 	fmt.Println("lehehe")
 	value := "simple,test"
