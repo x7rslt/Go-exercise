@@ -24,4 +24,5 @@ func main() {
 	var product Product
 	result := db.First(&product)
 	fmt.Println(product)
+	fmt.Println(result)
 }
