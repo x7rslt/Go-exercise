@@ -7,6 +7,86 @@ import (
 	"testing"
 )
 
+// 比较两个slice，求相同值,返回newslice
+func TestSameItems(t *testing.T){
+	var names = []string{"F5", "F7", "C6", "H5", "G5"}
+	var board = []string{"B4", "D4", "G5", "F5", "F7", "C6"}
+
+	results := []string{} // slice to store the result
+
+	for i := 0; i < len(names); i++ {
+		for k := 0; k < len(board); k++ {
+			if names[i] != board[k] {
+				continue   //继续循环
+			}
+			// append a value in result only if
+			// it exists both in names and board
+			results = append(results, names[i])
+		}
+	}
+	fmt.Printf("%v %d \n", results, len(results))
+}
+
+// 比较两个slice，求相同值,返回去除不同的原slice
+func TestSameItem(t *testing.T){
+	names := []string{"F5", "F7", "C6", "H5", "G5"}
+	board := []string{"B4", "D4", "G5", "F5", "F7", "C6"}
+	for i:=0;i<len(names);{
+		exist := false
+		for _,item := range board{
+			if names[i] == item{
+				exist = true
+				break
+			}
+		}
+		if !exist{
+			names = append(names[:i],names[i+1:]...)
+		}else{
+			i++   // 第一次疏忽，忘了递增，陷入死循环，惭愧
+		}
+	}
+	fmt.Println("Slice same item :",names)
+}
+// 比较两个slice，求不同值,返回去新slice
+func TestSliceDifferentItem(t *testing.T){
+	names := []string{"F5", "F7", "C6", "H5", "G5"}
+	board := []string{"B4", "D4", "G5", "F5", "F7", "C6"}
+	newnames := []string{}
+	for i:=0;i<len(names);{
+		exist := false
+		for _,item :=range board{
+			if names[i] == item{
+				exist = true
+				break
+			}
+		}
+		if !exist{
+			newnames = append(newnames, names[i])
+		}
+		i++
+	}
+	fmt.Println("Slice different item:",newnames)
+}
+
+// 比较两个slice，组合成新的slice
+func TestSliceUnion(t *testing.T){
+	names := []string{"F5", "F7", "C6", "H5", "G5"}
+	board := []string{"B4", "D4", "G5", "F5", "F7", "C6"}
+	for _, b := range board {
+		exist := false
+		for _, n := range names {
+			if n == b {
+				exist = true
+				break
+			}
+		}
+		if !exist {
+			names = append(names, b)
+		}
+	}
+	fmt.Println(names)
+}
+
 func TestSlice(t *testing.T) {
 	a := make([]int, 32)
 	b := a[1:16]
